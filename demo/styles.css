@@ -2,10 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto" !important;
 }
 
+.top-wavy-stroke,
 .bottom-wavy-stroke {
   position: relative;
+}
+
+.top-wavy-stroke:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 17px;
+  background-image: url(images/wave.png);
 }
 
 .bottom-wavy-stroke:after {
@@ -25,7 +38,6 @@
 
 body {
   background: #434a54 !important;
-  font-family: "Roboto", sans-serif !important;
 }
 
 header {
@@ -393,6 +405,7 @@ nav .nav-items a:hover {
   background: rgba(255, 255, 255, 0.35);
   overflow: hidden;
 }
+
 #section-about .content-block .skill-bar .base .bar {
   position: absolute;
   top: 0;
@@ -497,6 +510,7 @@ nav .nav-items a:hover {
   opacity: 1;
   animation: shake 1000ms ease-out both;
 }
+
 #section-team .member-block:hover img {
   filter: grayscale(0);
 }
@@ -587,6 +601,277 @@ nav .nav-items a:hover {
   color: #ffffff;
 }
 
+#section-prices {
+  background: #f5f6f7;
+  padding: 93px 0 80px;
+}
+
+#section-prices .section-padding-space {
+  padding: 0 50px;
+}
+
+#section-prices .title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#section-prices .title span {
+  color: #bbbbbb;
+  font: 400 12px "Roboto Condensed", Arial, sans-serif;
+}
+
+#section-prices .title h1 {
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+#section-prices .title p {
+  font: 400 16px/26px "Roboto Condensed", Arial, sans-serif;
+  color: #898989;
+  margin: 10px 0 18px;
+}
+
+#section-prices .title:after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 5px;
+  background-image: url(images/title-wave.png);
+  background-position: 0 0;
+  margin: auto;
+}
+
+#section-prices .price-block {
+  background: #ffffff;
+  border-radius: 2px;
+  text-align: center;
+  padding: 22px 30px 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#section-prices .price-block h5 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #48cfae;
+  margin-bottom: 27px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+#section-prices .price-block h6 {
+  font-size: 52px;
+  font-weight: bold;
+  color: #414141;
+  margin-right: 10px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+#section-prices .price-block h6:before {
+  content: "$";
+  display: inline-block;
+  font-family: Arial;
+  font-size: 18px;
+  color: #898989;
+  vertical-align: top;
+  margin-top: -10px;
+  margin-right: 3px;
+}
+
+#section-prices .price-block span {
+  color: #898989;
+  font: 400 12px/22px "Roboto", Arial, sans-serif;
+}
+
+#section-prices .price-block ul {
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+  color: #585858;
+}
+
+#section-prices .price-block li {
+  margin: 13px 0;
+}
+
+#section-prices .price-block .btn {
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  text-transform: uppercase;
+  background: #48cfae;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 10px 38px;
+  transition: background 150ms ease-out;
+}
+
+#section-prices .price-block.featured:before {
+  content: "featured";
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin: 0 50px;
+  display: inline-block;
+  background: #48cfae;
+  font-size: 11px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 2px 2px 0 0;
+}
+
+#section-blog {
+  text-align: center;
+  padding: 80px 0 100px;
+}
+
+#section-blog .section-padding-space {
+  padding: 0 50px;
+}
+
+#section-blog .title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#section-blog .title span {
+  color: #bbbbbb;
+  font: 400 12px "Roboto Condensed", Arial, sans-serif;
+}
+
+#section-blog .title h1 {
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+#section-blog .title p {
+  font: 400 16px/26px "Roboto Condensed", Arial, sans-serif;
+  color: #898989;
+  margin: 10px 0 18px;
+}
+
+#section-blog .title:after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 5px;
+  background-image: url(images/title-wave.png);
+  background-position: 0 0;
+  margin: auto;
+}
+
+#section-blog .blog-post {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+#section-blog .blog-post img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+
+#section-blog .blog-post .blog-title {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #414141;
+  border: none;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#section-blog .blog-post .blog-title:hover {
+  color: #48cfae;
+}
+
+#section-blog .blog-post .blog-title a {
+  transition: border-color 100ms ease-out, color 100ms ease-out;
+  line-height: 24px;
+}
+
+#section-blog .blog-post .blog-time {
+  display: block;
+  font: 400 12px/22px "Roboto", Arial, sans-serif;
+  color: #bbbbbb;
+}
+
+#section-blog .blog-post p {
+  margin-top: 10px;
+  font: 400 14px/24px "Roboto", Arial, sans-serif;
+  color: #585858;
+}
+
+#section-blog .btn {
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  text-transform: uppercase;
+  background: #48cfae;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 10px 38px;
+  transition: background 150ms ease-out;
+}
+
+#section-contacts .contacts-information {
+  background-image: url(images/contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 60px 0 0;
+}
+
+#section-contacts .contacts-information .section-padding-space {
+  padding: 0 50px;
+}
+
+#section-contacts .contacts-information .title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#section-contacts .contacts-information .title span {
+  color: rgba(255, 255, 255, 0.6);
+  font: 400 12px "Roboto Condensed", Arial, sans-serif;
+}
+
+#section-contacts .contacts-information .title h1 {
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#section-contacts .contacts-information .title p {
+  font: 400 16px/26px "Roboto Condensed", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 10px 0 18px;
+}
+
+#section-contacts .contacts-information .title:after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 5px;
+  background-image: url(images/title-wave.png);
+  background-position: 0 0;
+  margin: auto;
+}
+
 /* Animation */
 .animated {
   -webkit-animation-duration: 1s;
@@ -601,6 +886,7 @@ nav .nav-items a:hover {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
   10%,
   30%,
   50%,
@@ -609,6 +895,7 @@ nav .nav-items a:hover {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
+
   20%,
   40%,
   60%,
